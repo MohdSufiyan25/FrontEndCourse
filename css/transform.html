@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSFORMATION PROPERTIES</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+            transform: translate(300px,150px);
+            transform: scale(1.5);
+        }
+        div:hover {
+           /* transform: scale(1.5); */
+           transform: rotate(60deg);
+        }
+        #skew {
+            transform: skew(10deg,50deg);
+        }
+    </style>
+</head>
+<body>
+    <div>This is my box looks like</div>
+    <div id="skew"></div>
+    
+</body>
+</html>

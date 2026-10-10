@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in HTML</title>
+    <style>
+        @keyframes colorani {
+            0% {background-color: white;}
+            20% {background-color: blueviolet;}
+            40% {background-color: green;}
+            60% {background-color: palevioletred;}
+            80% {background-color: blue;}
+            100% {background-color: red;}
+
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translate(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translate(0);
+                opacity: 1;
+            }
+        }
+        h1 {
+            animation: slideIn;
+            animation-duration: 8s;
+        }
+        body {
+            animation-name: colorani;
+            animation-duration: 10s;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+        }
+        div {
+            width: 200px;
+            height: 100px;
+            animation-name: colorani;
+            animation-duration: 6s;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        /* step 2 apply animation properties  */
+        h2 {
+            animation-name: fadeIn;
+            animation-duration: 6s;
+            animation-timing-function: ease-in;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Welcome to Animations</h1>
+    <h2>Thank you</h2>
+    <div></div>
+    
+</body>
+</html>

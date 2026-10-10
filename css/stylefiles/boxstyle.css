@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+#box {
+    height: 100px;
+    width: 200px;
+    background-color: aqua;
+    /* 20px - 4 sides */
+/* 20px top & bottom, 100px right & left */
+/* 20px top, 100px left & right, 50px bottom */
+/* top right bottom left */
+/* padding: 20px 100px 50px 80px; */
+padding-left: 100px;
+/* Boredr-style: solid;
+border-width: 5px;
+border-color: brown; */
+boder: 4px double burlywood;
+/* Margin: 30px; */
+ margin-left: 40px;
+ outline: 6px solid brown;
+
+ border-radius: 5px;
+ box-shadow: 15px 10px 7px yellowgreen;
+}

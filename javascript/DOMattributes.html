@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attribute Methods Example</title>
+</head>
+<body>
+    <a id="myLink" href="https://kodnest.com">Go to kodnest</a>
+    <br><br>
+    <button onclick="changeLink()">Set Attribute</button>
+    <button onclick="showLink()">Get Attribute</button>
+    <button onclick="removeLink()">Remove Attribute</button>
+
+    <script>
+        let link = document.getElementById("myLink");
+
+        // setAttribute(): Adds/updates an attribute
+        function changeLink() {
+            link.setAttribute("href", "https://google.com");
+            link.innerText = "Go to google";
+        }
+
+        // getAttribute(): Retrieves attribute value
+        function showLink() {
+            let url = link.getAttribute("href");
+            alert("Current href is: " + url);
+        }
+
+        // removeAttribute(): Removes an attribute
+        function removeLink() {
+            link.removeAttribute("href");
+            alert("The 'href' attribute was removed.");
+        }
+    </script>
+</body>
+</html>

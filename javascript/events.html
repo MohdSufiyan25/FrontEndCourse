@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM events</title>
+    <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Type something here</h2>
+    <h1>Events in DOM</h1>
+    <h3>Mouse events</h3>
+    <div id ="box"></div>
+    <input type = "text" id="myInput" placeholder="start typing....">
+    <p id = "output" style="color:blue";>Key info will appear here</p>
+    <button type="submit">submit</button>
+</form>
+    <script>
+       const box = document.getElementById("box");
+       box.addEventListener('click', () => {
+        box.style.backgroundColor = "red";
+       })
+
+       box.addEventListener('dbclick', () => {
+        box.style.backgroundColor = "orange";
+       })
+
+       document.getElementById("box").addEventListener("mouseover", () => {
+        box.style.backgroundColor = "green";
+       })
+
+       box.addEventListener("mouseout", () => {
+        box.style.backgroundColor = "aqua";
+       })
+
+       box.addEventListener("mousemove", (event) => {
+        box.innerText = ` X: ${event.offsetX} and Y: ${event.offsetY}`
+
+       })
+
+    //    Keyboard events
+
+    // keyboard events
+const input = document.getElementById("myInput");
+const output = document.getElementById("output");
+
+// Keydown: when a key is pressed down
+input.addEventListener("keydown", (event) => {
+console.log(`Key Down: ${event.key}`);
+});
+
+// Keyup: when a key is released
+input.addEventListener("keyup", (event) => {
+console.log(`Key Up: ${event.key}`);
+});
+
+// Keypress: when a key that produces a character is press
+input.addEventListener("keypress", (event) => {
+output.innerText = `Key Pressed: ${event.key}`;
+});
+
+
+// Form Events
+
+document.querySelector("form").addEventListener("submit", () => {
+    alert("Form submitted successfully.");
+});
+
+
+input.addEventListener("focus", () => {
+    console.log("Input field is focused");
+})
+
+
+input.addEventListener("blur", () => {
+    console.log("Input field is blured");
+})
+
+input.addEventListener("change", (e) => {
+    console.log(`You have changed the value: , ${e.target.value}`)
+})
+
+input.addEventListener("input", (e) => {
+    console.log(`The value entered is ${e.target.value}`);
+})        
+
+
+    </script>
+    
+</body>
+</html>

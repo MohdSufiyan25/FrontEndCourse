@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add or remove DOM</title>
+    <style>
+        div {
+            height: 100px; width: 200px; padding: 10px; margin: 10px;
+            border:  4px solid black;
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to our DOM mini project</h1>
+    <button onclick="addbox()">add element</button>
+     <button onclick="removebox()">remove element</button>
+    
+     <script>
+        function addbox() {
+            b = document.querySelector("body");
+            mydiv = document.createElement("div")
+            b.appendChild(mydiv);
+        }
+        function removebox() {
+             b = document.querySelector("body");
+            deldiv = document.querySelector("div")
+            b.removeChild(deldiv);
+        }
+     </script>
+
+  
+
+</body>
+</html>

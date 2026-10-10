@@ -1,0 +1,10 @@
+body {
+    font-style: italic;
+}
+p {
+   color: blue;
+}
+#underline {
+    text-decoration: underline;
+    color: aqua;
+}

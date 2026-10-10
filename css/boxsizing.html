@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX SIZING IN HTML</title>
+    <style>
+        .nd {
+            background-color: aqua;
+            width: 100px;
+            height: 50px;
+            border: 10px solid red;
+            padding: 5px;
+            margin: 20px;
+        }
+        .cd {
+            background-color:chartreuse;
+            width: 100px;
+            height: 50px;
+            border: 10px solid red;
+            padding: 5px;
+            margin: 20px;
+            box-sizing: content-box;
+        }
+        .bd {
+            background-color: goldenrod;
+            width: 100px;
+            height: 100px;
+            border: 10px solid red;
+            padding: 5px;
+            margin: 20px;
+            box-sizing: border-box;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="nd">Normal Div</div>
+    <div class="cd">Content Div</div>
+    <div class="bd">Border Div</div>
+</body>
+</html>

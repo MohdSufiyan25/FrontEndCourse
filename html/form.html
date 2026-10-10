@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h4>Form Details</h4>
+    <hr>
+    <fieldset>
+        <br>
+        <legend>Personal Information</legend>
+    <form>
+        <label for="un">Username <span style="color: red;">*</span> :</label>
+        <input id="un" type="text" placeholder="enter your name...." name="username" required>
+        <br>
+        <br>
+        <label for="pwd">Password <span style="color:red;">*</span> :</label>
+        <input id="pwd" type="password" placeholder="enter password here...." name="password" required>
+
+        <br>
+        <br>
+        <label for="eml">Email :</label>
+        <input id="eml" type="email" placeholder="enter your email...." name="email">
+        <br>
+        <br>
+
+        <label>Age :</label>
+        <input type="number" min="1" max="100" name="age">
+        <br>
+        <br>
+    </fieldset>
+
+<fieldset>
+    <br>
+    <legend>Additional Information</legend>
+        <label>Date of Joining :</label>
+        <input type="datetime-local">
+        <br>
+        <br>
+
+        <label>Time of Birth</label>
+        <input type="time">
+        <br>
+        <br>
+
+        <label>Enter portfolio link :</label>
+        <input type="url">
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" name="op1" value="html">HTML
+        </label>
+        <label>
+            <input type="checkbox" name="op2" value="css">CSS
+        </label>
+        <label>
+            <input type="checkbox" name="op3" value="js">JAVASCRIPT
+        </label>
+        <br>
+        <br>
+
+        <label>
+            <input type="radio" name="gender" value="male">MALE
+        </label>
+          <label>
+            <input type="radio" name="gender" value="female">FEMALE
+        </label>
+        <br>
+        <br>
+
+    <label>rate 1 to 5 (HTML) :</label>
+    <input type="range" min="1" max="5" value="1">
+    <br>
+    <br>
+
+    <label>Upload resume:</label>
+    <input type="file" accept=".pdf">
+
+    <label>Choose your favcolor</label>
+    <input type="color">
+    <br>
+    <br>
+
+    <label>Hidden input</label>
+    <input type="hidden">
+    <input type="image">
+    <input type="search">
+    <input type="week">
+    <br>
+    <br>
+
+    <!--SELECT,TEXTAREA,FIELDSET,LEGEND -->
+    <label for="color">choose color:</label>
+    <select id="color" name="color">
+        <option value="r">Red</option>
+        <option value="g">Green</option>
+        <option value="y">Yelloe</option>
+    </select>
+    <br>
+    <br>
+    <label for="comments">Comments</label>
+    <textarea id="comments" name="comments" rows="4" cols="50">Enter your comments here...</textarea>
+    <br>
+    <br>
+
+
+
+        <button type="submit">Submit</button>
+        <button type="cancel">cancel</button>
+    </form>
+</fieldset>
+    
+</body>
+</html>

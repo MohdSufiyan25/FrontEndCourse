@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM HTML</title>
+</head>
+<body>
+    <h1>DOM Manipulations</h1>
+    <p class="even">Para 1</p>
+    <p>Para 1</p>
+    <p id="yellow" class="even">Para 1</p>
+    <p>Para 1</p>
+    <p class="even">Para 1</p>
+    <p>Para 1</p>
+    
+    <button onclick="change()">Click for change</button>
+
+    <script>
+        let ee = document.getElementsByClassName("even");
+        for(let i = 0; i < ee.length; i++){
+            ee[i].style.backgroundColor = "yellow"
+        }
+
+        function change() {
+            let elist = document.querySelectorAll(".even");
+            for(let i = 0; i < elist.length; i++){
+                elist[i].style.backgroundColor = "pink"
+            }
+
+            document.querySelector("h1").innerText = "DOM Manipulations In JavaScript";
+            document.getElementById("yellow").style.color = "yellow"
+            // document.getElementsByTagName("p")[1].style.backgroundColor = "red"
+            let paras = document.getElementsByTagName("p");
+            for(let i = 0; i < paras.length; i++){
+                paras[i].style.backgroundColor = "red"
+            }
+        }
+    </script>
+</body>
+</html>

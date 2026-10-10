@@ -1,0 +1,36 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+/* Parent container */
+.container {
+    width: 500px;
+    height: 700px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    align-content: center;
+    gap: 10px;
+}
+/* flex(child) items */
+.container div {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid blue;
+}
+
+.container #div1 {
+    align-self: flex-start;
+}
+
+.container #div2 {
+    align-self: center;
+}
+
+.container #div3 {
+    align-self: flex-end;
+}
